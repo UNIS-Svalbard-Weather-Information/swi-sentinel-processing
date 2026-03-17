@@ -72,7 +72,7 @@ jobs:
 
       - name: Install dependencies with uv
         run: |
-          uv pip install --system .[dev]
+          uv pip install --system .[test]
 
       - name: Run Ruff linter
         run: |
