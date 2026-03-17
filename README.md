@@ -1,2 +1,3 @@
-# swi-sentinel-processing
-Repository to create latest updated aerial imagery using Sentinel Date
+# Sentinel Imagery Processing
+
+This repository provide a tool to prepare latest satelite imagery using the Sentinel imagery.
