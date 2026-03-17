@@ -6,9 +6,6 @@ on:
   pull_request:
     branches: [ "*" ]  # Run on all pull requests
 
-env:
-  PYTHON_VERSION: "3.13"
-
 jobs:
   test:
     name: Run Tests
@@ -21,7 +18,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: ${{ env.PYTHON_VERSION }}
+          python-version-file: ".python-version"
 
       - name: Install uv
         run: |
@@ -60,7 +57,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: ${{ env.PYTHON_VERSION }}
+          python-version-file: ".python-version"
 
       - name: Install uv
         run: |
